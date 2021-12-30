@@ -18,7 +18,7 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: Starmania/Au-package
   github_api_key:
     secure: 1oFq41GM3Jndl81+WTi9GcHvBY08ccsmfNLtmiLnCCp0dNtZjaw4K3ijlifXYP1cdeCdO8R4kpXmS+Wu4wInc+/vRTxCV2ksodIHDuIbz5DxqfCGZYB/babVSqkg/gYgljOM60cnksRrFWfCzm1SNeoJ7UFcUsmM6qZKE2HJqE2ex85UntkEUAEUf4XNqkIgRI6V/T5Q0IugPQZPqv2LaST13IYOYavlMblKgfM9rPotVp3KeQgK1FTc+xu2H4aGgtV6uwD0/5CQyJII2SI36tOtdLMGM7L5i09SPJJNZjNfVzbGPkouoJgdqZMVHs9noh8j+H8Bq1FluOmtL9kG/g3afeQhG8shh3blslYgvQgwuANZxTfFwgYH+E5KCqkspj8iOIRrJ+lRx8rxeppaofv6D3Mknm3OMlr5rZonjWrPV9jp5vFGgpHMGww3nFZpATg18oniKCnKp6ktkLmLyZzv05iTH1m9kGimNVDIHk+8hK5wtOBAG0jTl4VB6Nyg5xlGcSaXMM4zX9COeOCyAw== #https://ci.appveyor.com/tools/encrypt
 
