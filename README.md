@@ -1,6 +1,6 @@
 <!-- EDIT ME-->
 
-[![](https://ci.appveyor.com/api/projects/status/github/Starmania/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/Starmania/chocolatey-packages)
+[![](https://ci.appveyor.com/api/projects/status/github/Starmania/Au-package?svg=true)](https://ci.appveyor.com/project/Starmania/Au-package)
 [Update status](https://gist.github.com/Starmania/YOUR_GIST_ID_HERE)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/Sylv1](https://chocolatey.org/profiles/Sylv1)
