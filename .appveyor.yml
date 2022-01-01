@@ -33,10 +33,10 @@ environment:
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id:
+  gist_id: https://gist.github.com/Starmania/6d6b247faed06e19c7cda54d22e15998
 
   # Force test: gist id for test results
-  gist_id_test:
+  gist_id_test: https://gist.github.com/Starmania/04691954a9184027530d5bdf478e179b #Gist secret
 
   # Chocolatey API key - to push updated packages
   api_key:
