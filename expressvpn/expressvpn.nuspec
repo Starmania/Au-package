@@ -8,7 +8,7 @@
     <title>ExpressVPN</title>
     <authors>ExpressVPN</authors>
     <projectUrl>https://www.expressvpn.com</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/Elderry/chocolatey-packages/master/icons/expressvpn.png</iconUrl>
+    <iconUrl>https://github.com/Starmania/Au-package/raw/master/expressvpn/expressvpn-logo-red-1678f7a43e4f847b309e1878dd01c2837ec13d97aa2a8d19a0840498578b55c7.png</iconUrl>
     <copyright>© 2022 ExpressVPN</copyright>
     <licenseUrl>https://www.expressvpn.com/tos</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
