@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>expressvpn</id>
-    <version>10.14.0.8</version>
+    <version>10.15.0.8</version>
     <packageSourceUrl>https://github.com/simplepat/choco-expressvpn</packageSourceUrl>
     <owners>Elderry, P. Marshall (@simplepat), Sylv1</owners>
     <title>ExpressVPN</title>
