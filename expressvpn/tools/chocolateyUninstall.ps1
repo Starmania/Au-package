@@ -1,21 +1,22 @@
+Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1" -Force
 $ErrorActionPreference = 'Stop';
 
 $packageName = 'expressvpn'
 
 #$uninstalled = $false
-[array]$key = Get-UninstallRegistryKey -SoftwareName 'ExpressVPN' | ForEach-Object QuietUninstallString
+[array]$key = Get-UninstallRegistryKey -SoftwareName 'ExpressVPN' | ForEach-Object BundleCachePath
 
-if ($key.Count -ne 0) {
-  $key | ForEach-Object {
+if ($null -ne $key) {
+
     $packageArgs = @{
       packageName    = $packageName
       fileType       = 'EXE'
-      silentArgs     = ''
+      silentArgs     = '/uninstall /quiet'
       validExitCodes = @(0)
-      file           = $key
+      file           = $key[0]
     }
+  
     Uninstall-ChocolateyPackage @packageArgs
-  }
-} elseif ($key.Count -eq 0) {
+} else {
   Write-Warning "$packageName has already been uninstalled by other means."
 }
