@@ -7,7 +7,7 @@ $packageArgs = @{
   checksum64             = 'd404b92d7635b0d0b7c486262392dd65fcb4ba7d6d77598441b15714684ab086'
   checksumType64         = 'sha256'
   silentArgs             = '/quiet'
-  validExitCodes         = @(0)
+  validExitCodes         = @(0,-2147023258)
   softwareName           = 'expressvpn*'
 }
 Install-ChocolateyPackage @packageArgs
