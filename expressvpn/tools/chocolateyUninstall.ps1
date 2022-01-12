@@ -1,4 +1,4 @@
-Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1" -Force
+#Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1" -Force
 $ErrorActionPreference = 'Stop';
 
 $packageName = 'expressvpn'
