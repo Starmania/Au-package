@@ -4,7 +4,9 @@ $ErrorActionPreference = 'Stop';
 $packageName = 'expressvpn'
 
 #$uninstalled = $false
-[array]$key = Get-UninstallRegistryKey -SoftwareName 'ExpressVPN' | ForEach-Object BundleCachePath
+[string]$key = Get-UninstallRegistryKey -SoftwareName 'ExpressVPN' | ForEach-Object BundleCachePath
+
+Write-Verbose ("Uninstallation: " + $key)
 
 if ($null -ne $key) {
 
@@ -13,7 +15,7 @@ if ($null -ne $key) {
       fileType       = 'EXE'
       silentArgs     = '/uninstall /quiet'
       validExitCodes = @(0)
-      file           = $key[0]
+      file           = $key
     }
   
     Uninstall-ChocolateyPackage @packageArgs
