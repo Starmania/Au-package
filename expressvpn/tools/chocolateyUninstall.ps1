@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop';
 
 $packageName = 'expressvpn'
 
-#$uninstalled = $false
+$uninstalled = $false
 [string]$key = Get-UninstallRegistryKey -SoftwareName 'ExpressVPN' | ForEach-Object BundleCachePath
 
 Write-Verbose ("Uninstallation: " + $key)
