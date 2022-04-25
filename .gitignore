@@ -10,4 +10,5 @@ update_vars.ps1
 code-notes
 code-notes/*
 *\_TODO.txt
-.vscode\*
+*\.vscode
+.vscode

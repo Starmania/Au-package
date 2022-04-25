@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName          = 'expressvpn'
   fileType             = 'exe'
-  url64bit             = 'https://www.expressvpn.works/clients/windows/expressvpn_windows_10.16.0.8_release.exe'
-  checksum64           = '2d0443fff1429d44f61d92646a71a40cb9d599a4e1cd02018a34aeb98ecb9785'
+  url64bit             = 'https://www.expressvpn.works/clients/windows/expressvpn_windows_10.23.0.6_release.exe'
+  checksum64           = '3afc3f78415035fdefeeda47f28dbcb2c305abc5dc520129722b0b0407b21b99'
   checksumType64       = 'sha256'
   silentArgs           = '/quiet'
   validExitCodes       = @(0,-2147023258) #The -2147023258 code is if app is already installed with the same version.
