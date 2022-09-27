@@ -14,13 +14,13 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     
     $download_page = Invoke-WebRequest -Uri $releases -MaximumRedirection 0 -UseBasicParsing -UserAgent "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36"
-    $url64 = $download_page.Links | Where-Object href -Match '\.exe$' | ForEach-Object href | Select-Object -First 1
+    $url64 = $download_page.Links | Where-Object href -Match '\.exe$' | ForEach-Object href | Select-Object -Skip 1 -First 1
     $global:version = $url64 -split '/' | Select-Object -Last 1
     $global:version = $version -split '_' | Select-Object -Last 1 -Skip 1
 
     @{
         URL64   = $url64
-        Version = $version
+        Version = "$version-beta"
     }
 }
 

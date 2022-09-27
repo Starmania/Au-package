@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>expressvpn-full</id>
-    <version>10.28.0.7</version>
+    <id>expressvpn-beta</id>
+    <version>12.33.0.46-beta</version>
     <packageSourceUrl>https://github.com/Starmania/Au-package</packageSourceUrl>
     <owners>Elderry, P. Marshall (@simplepat), Sylv1</owners>
-    <title>ExpressVPN Full</title>
+    <title>ExpressVPN Early Preview</title>
     <authors>ExpressVPN</authors>
     <projectUrl>https://www.expressvpn.com</projectUrl>
     <iconUrl>https://github.com/Starmania/Au-package/raw/master/expressvpn/expressvpn-logo-red-1678f7a43e4f847b309e1878dd01c2837ec13d97aa2a8d19a0840498578b55c7.png</iconUrl>
@@ -14,8 +14,11 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://www.expressvpn.com/support/vpn-setup/</docsUrl>
     <tags>trial vpn service client admin</tags>
-    <summary>ExpressVPN High Speed VPN - Full version</summary>
-    <description>High speed, ultra secure, and easy to use. Instant setup.
+    <summary>ExpressVPN High Speed VPN - Early Preview version</summary>
+    <description>## Early Preview: Optimized for Lightway, but without some features, like split tunneling     
+
+
+High speed, ultra secure, and easy to use. Instant setup.
 ### Easy-to-use VPN service for Windows, Mac, iOS, Android, Routers, and Linux
 Setup is easy, whether you’re using a computer, tablet, or smartphone. Our user-friendly apps let you secure your connection and unblock websites in one click. Just sign up, install, and connect.
 ### Ultra secure and ultra fast
