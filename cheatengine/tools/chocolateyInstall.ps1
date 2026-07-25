@@ -1,7 +1,7 @@
 Install-ChocolateyPackage `
   -PackageName 'cheatengine' `
-  -Url 'https://d2oq4dwfbh6gxl.cloudfront.net/f/CheatEngine/1032/CheatEngine75.exe' `
-  -Checksum 'F88B0E5A32A395AB9996452D461820679E55C19952EFFE991DEE8FEDEA1968AF' `
+  -Url 'https://d1dj9aohuk02ls.cloudfront.net/f/CheatEngine/2129/CheatEngine77.exe' `
+  -Checksum 'CF0F4B6002555677984233C95856683959BE83A5DEF3DC12175A8296EB22676B' `
   -ChecksumType 'SHA256' `
   -FileType 'EXE' `
   -Silent '/VERYSILENT /ZBDIST'

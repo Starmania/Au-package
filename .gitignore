@@ -12,3 +12,5 @@ code-notes/*
 *\_TODO.txt
 *\.vscode
 .vscode
+__pycache__/
+tmp/
