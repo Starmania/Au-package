@@ -1,0 +1,40 @@
+name: Pack and push cheatengine
+
+on:
+  workflow_dispatch:
+    inputs:
+      versions:
+        description: Space separated versions to build (must exist in cheatengine/releases.json)
+        required: true
+        default: 7.6 7.7
+      push:
+        description: Push to the Chocolatey community repository (unchecked = pack only)
+        type: boolean
+        required: true
+        default: false
+
+jobs:
+  pack:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pack${{ inputs.push && ' and push' || '' }}
+        shell: pwsh
+        env:
+          CHOCO_APIKEY: ${{ secrets.CHOCO_APIKEY }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          choco --version
+          foreach ($version in ('${{ inputs.versions }}' -split '\s+' | Where-Object { $_ })) {
+            ./cheatengine/build-package.ps1 `
+              -Version $version `
+              -Push:$${{ inputs.push }} `
+              -ApiKey $env:CHOCO_APIKEY
+          }
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nupkg
+          path: staging/**/*.nupkg
+          if-no-files-found: error

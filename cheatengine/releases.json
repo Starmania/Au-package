@@ -1,0 +1,12 @@
+{
+    "7.6": {
+        "url": "https://d1dj9aohuk02ls.cloudfront.net/f/CheatEngine/1700/CheatEngine76.exe",
+        "checksum": "CA01B337E98E833167BC125891BFCE7FB21B4150049207AEBE23F4530333DDC2",
+        "silentArgs": "/VERYSILENT /ZBDIST"
+    },
+    "7.7": {
+        "url": "https://d1dj9aohuk02ls.cloudfront.net/f/CheatEngine/2129/CheatEngine77.exe",
+        "checksum": "CF0F4B6002555677984233C95856683959BE83A5DEF3DC12175A8296EB22676B",
+        "silentArgs": "/VERYSILENT /ZBDIST"
+    }
+}

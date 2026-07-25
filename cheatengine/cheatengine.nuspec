@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
     <metadata>
         <id>cheatengine</id>
         <title>Cheat Engine</title>
@@ -31,10 +31,8 @@ Engine, you can find it in your programs list after installing) and at least rea
         <projectSourceUrl>https://github.com/cheat-engine/cheat-engine</projectSourceUrl>
         <bugTrackerUrl>https://github.com/cheat-engine/cheat-engine/issues</bugTrackerUrl>
         <mailingListUrl>http://forum.cheatengine.org/</mailingListUrl>
-        <licenseUrl>
-            https://github.com/cheat-engine/cheat-engine/blob/7.0/Cheat%20Engine/release/License.txt</licenseUrl>
-        <iconUrl>
-            https://raw.githubusercontent.com/cheat-engine/cheat-engine/master/Cheat%20Engine/images/celogo.png</iconUrl>
+        <licenseUrl>https://github.com/cheat-engine/cheat-engine/blob/7.0/Cheat%20Engine/release/License.txt</licenseUrl>
+        <iconUrl>https://raw.githubusercontent.com/cheat-engine/cheat-engine/master/Cheat%20Engine/images/celogo.png</iconUrl>
         <tags>games hex-editor debugging admin</tags>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <dependencies>
