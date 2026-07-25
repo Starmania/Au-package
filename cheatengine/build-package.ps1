@@ -42,8 +42,10 @@ Write-Host "Packing cheatengine $Version..."
 choco pack "$staging\cheatengine.nuspec" --output-directory $staging
 if ($LASTEXITCODE -ne 0) { throw "choco pack failed with exit code $LASTEXITCODE." }
 
-$nupkg = Join-Path $staging "cheatengine.$Version.nupkg"
-if (-not (Test-Path $nupkg)) { throw "Expected $nupkg to exist after packing." }
+# choco normalizes the version, so 7.6 is packed as cheatengine.7.6.0.nupkg
+$nupkg = Get-ChildItem -Path $staging -Filter 'cheatengine.*.nupkg' | Select-Object -First 1
+if (-not $nupkg) { throw "No nupkg was produced in $staging." }
+$nupkg = $nupkg.FullName
 Write-Host "Built $nupkg"
 
 if ($Push) {
